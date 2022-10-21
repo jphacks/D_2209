@@ -8,7 +8,7 @@ Google Mapにおける衛星写真を使用して，大雑把なエリア特徴�
 
 Google Maps APIを使用する際に必要なAPIアクセスキー．
 
-### google_maps_api.py
+### satellite_img_downloader.py
 
 Google Maps Static APIを使用して，指定ズーム(default 15)で230x230の画像を取得．
 
