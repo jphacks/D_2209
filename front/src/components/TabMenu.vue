@@ -16,7 +16,7 @@ export default {
   data () {
     return {
       items: [
-        { title: 'top', path: '/' },
+        //{ title: 'top', path: '/' },
         
         { title: '雰囲気検索', path: '/outputs' }
       ]
@@ -25,9 +25,10 @@ export default {
 }
 </script>
 
-<style scoped>
+<style  scoped>
 
 ol {
+  font-family: 'Yusei Magic', sans-serif;
   
   margin-left: auto;
   margin-right: auto;
@@ -40,12 +41,12 @@ ol {
 }
 
 li {
-  margin-top: 550px;
-  width: 100px;
+  margin-top: 30px;
+  width: 300px;
   height: 50px;
   margin-left:10px;
   margin-right:10px;
-  font-size: 14px;
+  font-size: 18px;
   background-color: #97C73D;
   border-radius: 8px;
   position: relative;

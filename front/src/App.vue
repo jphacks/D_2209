@@ -1,4 +1,5 @@
 <template>
+  
   <div id="app">
     <div id="logo">
       <router-link to='/'>
@@ -7,8 +8,12 @@
     </div>
     
     <MainHeader/>
-    <tab-menu></tab-menu>
     <router-view/>
+    <div id="map">
+     <google-map/>
+    </div>
+    <tab-menu></tab-menu>
+    
   </div>
 </template>
 
@@ -16,11 +21,13 @@
 
 import TabMenu from '@/components/TabMenu'
 import MainHeader from '@/components/MainHeader'
+import GoogleMap from './components/GoogleMap.vue'
+
 
 export default {
   name: 'App',
   components: {
-    TabMenu, MainHeader
+    TabMenu, MainHeader, GoogleMap
   }
 
   
@@ -43,5 +50,8 @@ export default {
   text-align: left;
   margin-top: -15px;
   
+}
+#map {
+  margin-top: 30px;
 }
 </style>
