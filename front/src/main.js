@@ -10,6 +10,8 @@ Vue.config.productionTip = false
 
 Vue.prototype.$gm = window.google.maps;
 
+
+
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
@@ -17,3 +19,5 @@ new Vue({
   components: { App },
   template: '<App/>'
 })
+
+
