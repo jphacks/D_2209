@@ -4,6 +4,7 @@
    <div ref="map" style="height:550px;width:400px;"></div>
    <h1>Google Map</h1>
    {{position}}
+  
   </div>
   </template>
   
@@ -49,7 +50,9 @@
        // ２点目以降
        this.path.push(latLng);
        this.line.setPath([...this.path]);
-       return;
+       //return{
+        //path:this.path
+       //};
       }
     },
 
@@ -59,7 +62,7 @@
     mounted(){
 
      const map = new window.google.maps.Map(this.$refs.map, {
-        center: {lat: 35.652832, lng: 139.839478},
+        center: {lat: 34.5841973, lng: 135.5756114},
         zoom: 13,
         streetViewControl:false, // ストリートビュー非表示
         fullscreenControl:false // フルスクリーン非表示
@@ -73,6 +76,7 @@
         return this.drawLine(mapsMouseEvent);
       });
 
+      /*
       new window.google.maps.Polyline({
        path:[
         { lat: 34.855273888888888, lng: 135.30649 },
@@ -83,8 +87,9 @@
       strokeOpacity: 1.0,
       strokeWeight: 2,
       }).setMap(map);
-
+      */
       this.map = map;
+      
     }
   }
   </script>
