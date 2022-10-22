@@ -25,7 +25,7 @@ params = {
 lat_delta = -0.008
 lon_delta = 0.01
 out_dir = './out/'
-download_interval = 0.1
+download_interval = 0.002   # 500 QPS以下になる
 
 def download_img(lat, lon, zoom=15):
     params['zoom'] = zoom
