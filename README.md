@@ -1,4 +1,4 @@
-# サンプル（プロダクト名）
+# Airdapt - 地図をなぞって、雰囲気検索。
 
 [![Airdapt](./docs/img/logo.png)](https://mov.jp2022.aonori.dev)
 
