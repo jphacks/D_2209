@@ -49,7 +49,8 @@ Airdaptは，足を運ばないと感じられない街の "空気感" を検索
 ## 開発技術 
 ### 活用した技術
 
-AIモデルを使用したバックエンドの実装については[こちら](server/satellite_resnet18)をご覧ください．
+![tech_arch](docs/img/tech_arch.png)
+AIモデルを使用したバックエンドの実装については[こちら](server/satellite_resnet18)もご覧ください．
 
 #### API・データ
 * Google Map API
